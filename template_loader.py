@@ -104,9 +104,13 @@ class DebugLoader(BaseLoader):
             # If not extending, wrap the whole thing
             return f'<div style="{style}">{label_html}{content}</div>'
 
+
+
 # settings.py
 # APP_DIRS = False
 # module_name.file_name.class -> erp_backend.template_loader.DebugLoader
+SHOW_TEMPLATE_DEBUG = True
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
